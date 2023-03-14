@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KeyBoard Screen</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <div>
+
+        <div class="screen">
+            <label for="screen" class="note">Note to self!</label>
+            <textarea name="note" id="screen" type="text" required></textarea>
+        </div>
+        <div class="open-close" onchange="myToggle()" >
+            
+            <input type="checkbox" id="open-close" class="roll">
+            <label for="open-close" class="switch"></label >
+
+        </div>
+        <div class="KeyBoard" id="KeyBoard">
+            
+            
+            <div class="KeyBoard-top">
+                <button onclick="typing('q')">q</button>
+                <button onclick="typing('w')">w</button>
+                <button onclick="typing('e')">e</button>
+                <button onclick="typing('r')">r</button>
+                <button onclick="typing('t')">t</button>
+                <button onclick="typing('y')">y</button>
+                <button onclick="typing('u')">u</button>
+                <button onclick="typing('i')">i</button>
+                <button onclick="typing('o')">o</button>
+                <button onclick="typing('p')">p</button>
+            </div>
+            
+            <div class="KeyBoard-middle">
+                <button onclick="typing('a')">a</button>
+                <button onclick="typing('s')">s</button>
+                <button onclick="typing('d')">d</button>
+                <button onclick="typing('f')">f</button>
+                <button onclick="typing('g')">g</button>
+                <button onclick="typing('h')">h</button>
+                <button onclick="typing('j')">j</button>
+                <button onclick="typing('k')">k</button>
+                <button onclick="typing('l')">l</button>
+            </div>
+            
+            <div class="KeyBoard-bottom">
+                <button onclick="capText()" id="capText">Caps</button>
+                <button onclick="typing('z')">z</button>
+                <button onclick="typing('x')">x</button>
+                <button onclick="typing('c')">c</button>
+                <button onclick="typing('v')">v</button>
+                <button onclick="typing('b')">b</button>
+                <button onclick="typing('n')">n</button>
+                <button onclick="typing('m')">m</button>
+                <button onclick="del()">del</button>
+            </div>
+            
+            <div class="KeyBoard-bottom-down">
+                <button onclick="typing('.')" id="sym">.</button>
+                <button onclick="typing(',')" id="sym">,</button>
+                <button onclick="typing(' ')" id="spaceBar">space</button>
+                <button onclick="enter()" id="enter">return</button>
+            </div>
+
+            <!-- <div class="KeyBoard-top top1">
+                <button onclick="typing('Q')">Q</button>
+                <button onclick="typing('W')">W</button>
+                <button onclick="typing('E')">E</button>
+                <button onclick="typing('R')">R</button>
+                <button onclick="typing('T')">T</button>
+                <button onclick="typing('Y')">Y</button>
+                <button onclick="typing('U')">U</button>
+                <button onclick="typing('I')">I</button>
+                <button onclick="typing('O')">O</button>
+                <button onclick="typing('P')">P</button>
+            </div>
+
+            <div class="KeyBoard-middle middle1">
+                <button onclick="typing('A')">A</button>
+                <button onclick="typing('S')">S</button>
+                <button onclick="typing('D')">D</button>
+                <button onclick="typing('F')">F</button>
+                <button onclick="typing('G')">G</button>
+                <button onclick="typing('H')">H</button>
+                <button onclick="typing('J')">J</button>
+                <button onclick="typing('K')">K</button>
+                <button onclick="typing('L')">L</button>
+            </div>
+
+            <div class="KeyBoard-bottom bottom1">
+                <button >Caps</button>
+                <button onclick="typing('z')">Z</button>
+                <button onclick="typing('X')">X</button>
+                <button onclick="typing('C')">C</button>
+                <button onclick="typing('V')">V</button>
+                <button onclick="typing('B')">B</button>
+                <button onclick="typing('N')">N</button>
+                <button onclick="typing('M')">M</button>
+                <button onclick="del()">del</button>
+            </div> -->
+            
+            
+        </div>
+
+        <label onchange="myToggle()" class="switch">
+            <input type="checkbox" checked>
+            <span class="slider round"></span>
+          </label>
+
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>

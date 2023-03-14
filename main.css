@@ -1,0 +1,124 @@
+.screen {
+    position: relative;
+    /* padding-top: 30px; */
+    /* border: 2px solid red; */
+    margin: 0 auto;
+    width: 50%;
+}
+textarea {
+    padding: 40px 0px 10px 10px;
+    font-size: 18px;
+    width: 100%;
+    height: 250px;
+    box-sizing: border-box;
+}
+.note {
+    position: absolute;
+    margin: 10px 10px;
+    font-size: 20px;
+    font-family: 'ink free', sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+}
+.KeyBoard {
+    background-color: gray;
+    border: 2px solid gray;
+    margin: 0 auto;
+    width: 50%;
+}
+.KeyBoard button {
+    width: 10%;
+    height: 65px;
+    border: 2px solid gray;
+    outline: none;
+    background-color: black;
+    color: white;
+}
+.KeyBoard button:hover {
+    background-color: gray;
+}
+#capText:focus {
+    background-color: gray;
+}
+.KeyBoard-top {
+    display: flex;
+    justify-content: space-around;
+}
+.KeyBoard-middle {
+    display: flex;
+    justify-content: space-around; 
+    width: 90%;
+    margin: 0 auto;
+}
+.KeyBoard-middle button {
+    width: 12%;
+}
+.KeyBoard-bottom {
+    display: flex;
+    justify-content: space-around;
+}
+.KeyBoard-bottom button {
+    width: 12%;
+}
+.KeyBoard-bottom-down {
+    display: flex;
+    justify-content: space-around;
+}
+#spaceBar {
+    width: 50%;
+}
+#enter {
+    width: 30%;
+}
+#sym {
+    width: 10%;
+}
+.open-close {
+    margin: 0 auto;
+    width: 50%;
+    display: flex;
+}
+.switch {
+    background-color: gray;
+    width: 40px;
+    height: 24px;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: 0.3s;
+    position: relative;
+}
+.switch::before {
+    position: absolute;
+    content: '';
+    background-color: white;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin: 2px;
+    transition: 0.3s;
+}
+.roll:checked + .switch {
+    background-color: purple;
+}
+.roll:checked + .switch::before {
+    transform: translateX(18px);
+}
+.roll {
+    display: none;
+}
+
+@media screen and (max-width:700px) {
+    .screen {
+        width: 100%;
+    }
+    textarea {
+        height: 300px;
+    }
+    .KeyBoard {
+        width: 100%;
+    }
+    .open-close {
+        width: 100%;
+    }
+}
+  
